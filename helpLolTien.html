@@ -1,42 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Document</title>
 </head>
 <style>
-    .app{
+    .app {
         width: 1200px;
         margin: 0 auto;
-        background-color: #999;
         display: flex;
     }
+
     .sidebar {
         width: 30%;
         background-color: aqua;
     }
+
     .content {
         width: 70%;
+        padding: 0 10px;
     }
+
     .content-title {
         height: 40px;
-        border-bottom: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid red;
     }
+
+    .content-title span {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .content-title__right i {
+        color: #ccc;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .content-title span:first-child {
+        font-size: 16px;
+        font-weight: 550;
+    }
+
     .content-main {
         display: flex;
-        height: 500px;
+        padding: 100px 0;
+        border-bottom: 1px solid #ccc;
     }
+
     .content-main_left {
         width: 50%;
-        background-color: yellow;
+    }
+    .content-main_left h1 {
+        font-size: 40px;
+    }
+    .content-main_left h5, .content-main_left p {
+        color: #666;
+    }
+    .content-main_left button {
+        outline: none;
+        width: 150px;
+        padding: 10px 0;
+        background-color: white;
+        border: 1px solid red;
+        color: red;
     }
     .content-main__right {
         width: 50%;
-        background-color: green;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-main__right img {
+        width: 80%;
+        height: 60%;
     }
 </style>
+
 <body>
     <div class="app">
         <div class="sidebar">
@@ -44,17 +93,35 @@
         </div>
         <div class="content">
             <div class="content-title">
-                Đây là phần chứa Middle HTC 2021 với mấy cái icon
+                <div class="content-title__left">
+                    <span>Middle</span> <span>HCI2021</span>
+                </div>
+                <div class="content-title__right">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
             </div>
-            <div class="content-main"><!--đây là phần nội dung chính-->
+            <div class="content-main">
+                <!--đây là phần nội dung chính-->
                 <div class="content-main_left">
-                    nội dung bên cội trái ở đây
+                    <h1>HCT MIDDLE EXAMPLE CODE 01</h1>
+                    <h5>GOOD LUCK FOR STUDENT</h5>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi, blanditiis delectus
+                        incidunt quos non at nisi eaque tenetur sed ipsum minima recusandae distinctio officia. Labore
+                        placeat quasi ipsum veniam Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                        nisi earum officia aperiam, non temporibus. Ab error fugiat unde mollitia cum exercitationem
+                        voluptatibus! Laborum officiis quidem atque exercitationem eum reiciendis.
+                    </P>
+                    <button>LEARN MORE</button>
                 </div>
                 <div class="content-main__right">
-                    nội dung bên cột phải ở đây
+                    <img 
+                    src="https://tse1.mm.bing.net/th?id=OIP.Ihggi-zOl2bwMpoerAApXgHaEo&pid=Api&P=0&w=259&h=163" 
+                    alt="anh">
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
