@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .app{
+        width: 1200px;
+        margin: 0 auto;
+        background-color: #999;
+        display: flex;
+    }
+    .sidebar {
+        width: 30%;
+        background-color: aqua;
+    }
+    .content {
+        width: 70%;
+    }
+    .content-title {
+        height: 40px;
+        border-bottom: 1px solid #ccc;
+    }
+    .content-main {
+        display: flex;
+        height: 500px;
+    }
+    .content-main_left {
+        width: 50%;
+        background-color: yellow;
+    }
+    .content-main__right {
+        width: 50%;
+        background-color: green;
+    }
+</style>
+<body>
+    <div class="app">
+        <div class="sidebar">
+            ở đây là cột chứa sidebar
+        </div>
+        <div class="content">
+            <div class="content-title">
+                Đây là phần chứa Middle HTC 2021 với mấy cái icon
+            </div>
+            <div class="content-main"><!--đây là phần nội dung chính-->
+                <div class="content-main_left">
+                    nội dung bên cội trái ở đây
+                </div>
+                <div class="content-main__right">
+                    nội dung bên cột phải ở đây
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
